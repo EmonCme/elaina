@@ -1,7 +1,7 @@
 /*
 # elaina - UserBot
 # Credit Sc Ori By ZeeoneOfc
-# Subscribe Yt RflBotz Ofc
+# Call Me Emon
 # This file is a part of < https://github.com/zeeoneofc/elaina/ >
 */ 
 
@@ -638,26 +638,44 @@ case 'faktaunik':
 faktaunik = await fetchJson(`https://api.lolhuman.xyz/api/random/faktaunik?apikey=${lolkey}`)
 reply(`*Taukah kamu ternyata*\n${faktaunik.result}`) 
 break
-case 'wikipedia':
-if (args.length == 0) return reply(`Nama Yg Mau Di Cari Mana Kak\nContoh: ${prefix + command} Tahu`)
-query = args.join(" ")
-get_result = await fetchJson(`https://api.lolhuman.xyz/api/wiki?apikey=${lolkey}`)
-get_result = get_result.result
-reply(get_result)
+case 'wikipedia':
+
+if (args.length == 0) return reply(`Nama Yg Mau Di Cari Mana Kak\nContoh: ${prefix + command} Tahu`)
+
+query = args.join(" ")
+
+get_result = await fetchJson(`https://api.lolhuman.xyz/api/wiki?apikey=${lolkey}`)
+
+get_result = get_result.result
+
+reply(get_result)
+
 break
-case 'translate':
-if (args.length == 0) return reply(`Teks Yg Mau Di Translate Mana Kak\nContoh: ${prefix + command} en Good Morning`)
-kode_negara = args[0]
-args.shift()
-ini_txt = args.join(" ")
+case 'translate':
+
+if (args.length == 0) return reply(`Teks Yg Mau Di Translate Mana Kak\nContoh: ${prefix + command} en Good Morning`)
+
+kode_negara = args[0]
+
+args.shift()
+
+ini_txt = args.join(" ")
+
 get_result = await fetchJson(`https://api.lolhuman.xyz/api/translate/auto/id?apikey=${lolkey}`)
-get_result = get_result.result
-init_txt = `From : ${get_result.from}\n`
-init_txt += `To : ${get_result.to}\n`
-init_txt += `Original : ${get_result.original}\n`
-init_txt += `Translated : ${get_result.translated}\n`
-init_txt += `Pronunciation : ${get_result.pronunciation}\n`
-reply(init_txt)
+get_result = get_result.result
+
+init_txt = `From : ${get_result.from}\n`
+
+init_txt += `To : ${get_result.to}\n`
+
+init_txt += `Original : ${get_result.original}\n`
+
+init_txt += `Translated : ${get_result.translated}\n`
+
+init_txt += `Pronunciation : ${get_result.pronunciation}\n`
+
+reply(init_txt)
+
 break
 case 'katabijak':
 anu = await fetchJson(`https://api.lolhuman.xyz/api/random/katabijak?apikey=${lolkey}`)
@@ -1549,7 +1567,7 @@ await elaina.sendMessage(from, thumbnail, image, { quoted: mek, caption: ini_txt
 break
 case 'sewabot':
 if (!iselaina) return sendButMessage(from, lang.noregis(pushname), `Klik Button Untuk Verify`, [{buttonId: '.daftar',buttonText: {displayText: `Daftar`,},type: 1,}], {quoted: fgif});
-			reply('http://wa.me/62895410068780?text=Sewa+Bot') 		
+			reply('http://wa.me/6285799227173?text=Sewa+Bot') 		
 break
 case 'kick':
 			if (!isGroup) return reply(lang.group())
@@ -1797,24 +1815,24 @@ computer = 'gunting';
 computer = 'kertas';
 }
 if (q == computer) {
-reply(`*Subscribe Yt RflBotz Ofc*\n\nPertandingan Seri!`)
+reply(`*Call Me Emon*\n\nPertandingan Seri!`)
 } else if (q == 'batu') {
 if (computer == 'gunting') {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Batu\n• Computer: Gunting\n\nCongrats You win!`)
+reply(`*Call Me Emon*\n\n• You: Batu\n• Computer: Gunting\n\nCongrats You win!`)
 } else {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Batu\n• Computer: Kertas\n\nYou lose:(`)
+reply(`*Call Me Emon*\n\n• You: Batu\n• Computer: Kertas\n\nYou lose:(`)
 }
 } else if (q == 'gunting') {
 if (computer == 'batu') {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Gunting\n• Computer: Batu\n\nYou lose:(`)
+reply(`*Call Me Emon*\n\n• You: Gunting\n• Computer: Batu\n\nYou lose:(`)
 } else {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Gunting\n• Computer: Kertas\n\nCongrats You win!`)
+reply(`*Call Me Emon*\n\n• You: Gunting\n• Computer: Kertas\n\nCongrats You win!`)
 }
 } else if (q == 'kertas') {
 if (computer == 'batu') {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Kertas\n• Computer: Batu\n\nCongrats You win!`)
+reply(`*Call Me Emon*\n\n• You: Kertas\n• Computer: Batu\n\nCongrats You win!`)
 } else {
-reply(`*Subscribe Yt RflBotz Ofc*\n\n• You: Kertas\n• Computer: Gunting\n\nYou lose:(`)
+reply(`*Call Me Emon*\n\n• You: Kertas\n• Computer: Gunting\n\nYou lose:(`)
 }
 }
 }
