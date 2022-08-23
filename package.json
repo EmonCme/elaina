@@ -13,7 +13,7 @@
   "author": "RflBotz",
   "dependencies": {
     "api-alphabot":"1.0.2",
-    "@adiwajshing/baileys": "^3.5.3", 
+    "@adiwajshing/baileys": "^4.2.0", 
     "awesome-phonenumber": "^2.64.0",
     "async": "^3.2.0",
     "axios": "^0.21.1",
